@@ -1,7 +1,7 @@
 ---
 title: "CS178 Teachging Assistant"
 collection: teaching
-type: "undergraduate"
+type: "Undergraduate"
 permalink: /teaching/2014-spring-teaching-1
 venue: "Machine Learning"
 date: 2020-01-01

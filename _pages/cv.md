@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+- [CV (PDF Version)](files/CV.pdf)
+
 Education
 ======
 * B.S. in Computer Science, New York University Shanghai, 2014-2018
