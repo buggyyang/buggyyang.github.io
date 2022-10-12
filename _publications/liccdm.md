@@ -6,7 +6,7 @@ excerpt: "**Ruihan Yang** and Stephan Mandt"
 date: 2022-09-01
 venue: 'Arxiv preprint'
 paperurl: 'https://arxiv.org/pdf/2209.06950.pdf'
-citation: #'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+citation: 'Yang, Ruihan, and Stephan Mandt. "Lossy Image Compression with Conditional Diffusion Models." arXiv preprint arXiv:2209.06950 (2022).'
 ---
 <!-- #This paper is about the number 1. The number 2 is left for future work. -->
 
