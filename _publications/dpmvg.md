@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/dpmvg
 excerpt: "**Ruihan Yang**, Prakhar Srivastava and Stephan Mandt"
 date: 2022-03-01
-venue: 'Arxiv preprint'
+venue: 'arXiv preprint'
 paperurl: 'https://arxiv.org/pdf/2203.09481.pdf'
 citation: #'Yang, Ruihan, and Stephan Mandt. "Lossy Image Compression with Conditional Diffusion Models." arXiv preprint arXiv:2209.06950 (2022).'
 ---
