@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/inspectvae
 excerpt: "**Ruihan Yang**, Tianyao Chen, Yiyi Zhang and Gus Xia"
 date: 2019-06-01
-venue: 'NIME 2019'
+venue: 'NIME'
 paperurl: 'https://arxiv.org/pdf/1904.08842.pdf'
 citation: #'Yang, Ruihan, and Stephan Mandt. "Lossy Image Compression with Conditional Diffusion Models." arXiv preprint arXiv:2209.06950 (2022).'
 ---

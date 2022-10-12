@@ -1,20 +1,11 @@
 ---
-title: "Teaching experience 1"
+title: "CS178 Teachging Assistant"
 collection: teaching
-type: "Undergraduate course"
+type: "undergraduate"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+venue: "Machine Learning"
+date: 2020-01-01
+location: "UC Irvine"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+Teaching Assistant for undergraduate Machine Learning course CS178, Winter 2020

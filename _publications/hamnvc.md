@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/hamnvc
 excerpt: "**Ruihan Yang**, Yibo Yang, Joe Marino and Stephan Mandt"
 date: 2021-05-01
-venue: 'ICLR 2021'
+venue: 'ICLR'
 paperurl: 'https://arxiv.org/pdf/2010.10258.pdf'
 citation: #'Yang, Ruihan, and Stephan Mandt. "Lossy Image Compression with Conditional Diffusion Models." arXiv preprint arXiv:2209.06950 (2022).'
 ---
