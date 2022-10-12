@@ -1,5 +1,5 @@
 ---
-title: "CS178 Teachging Assistant"
+title: "CS178 Teaching Assistant"
 collection: teaching
 type: "Undergraduate"
 permalink: /teaching/2014-spring-teaching-1
