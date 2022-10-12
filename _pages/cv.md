@@ -9,12 +9,12 @@ redirect_from:
 
 {% include base_path %}
 
-- [CV (PDF Version)](files/CV.pdf)
+* [CV (PDF Version)](files/CV.pdf)
 
 Education
 ======
 * B.S. in Computer Science, New York University Shanghai, 2014-2018
-* Ph.D in Computer Science, University of California Irvine, 2019-
+* Ph.D in Computer Science, University of California Irvine, 2019-now
 
 Research experience
 ======
