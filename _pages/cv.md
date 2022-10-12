@@ -13,8 +13,8 @@ redirect_from:
 
 Education
 ======
-* B.S. in Computer Science, New York University Shanghai, 2014-2018
 * Ph.D in Computer Science, University of California Irvine, 2019-now
+* B.S. in Computer Science, NYU Shanghai, New York University, 2014-2018
 
 Research experience
 ======
