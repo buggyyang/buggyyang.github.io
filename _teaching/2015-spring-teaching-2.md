@@ -1,11 +1,13 @@
 ---
 title: "CS274C Teaching Assistant"
 collection: teaching
-type: "graduate"
+type: "Graduate"
 permalink: /teaching/2015-spring-teaching-1
 venue: "Neural Networks and Deep Learning"
 date: 2020-03-01
 location: "UC Irvine"
 ---
 
-Teaching Assistant for graduate Neural Networks and Deep Learning course CS274C, Spring 2020
+- Teaching Assistant,
+- Graduate Course CS274C: Neural Networks and Deep Learning
+- Spring 2020

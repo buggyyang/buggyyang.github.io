@@ -8,4 +8,6 @@ date: 2020-01-01
 location: "UC Irvine"
 ---
 
-Teaching Assistant for undergraduate Machine Learning course CS178, Winter 2020
+- Teaching Assistant,
+- Undergraduate Course CS178: Machine Learning
+- Winter 2020
