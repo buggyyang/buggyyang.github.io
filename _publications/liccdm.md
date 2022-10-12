@@ -1,8 +1,8 @@
 ---
 title: "Lossy Image Compression with Conditional Diffusion Model"
 collection: publications
-permalink:
-excerpt: **Ruihan Yang** and Stephan Mandt
+permalink: #/publication/liccdm
+excerpt: "**Ruihan Yang** and Stephan Mandt"
 date: 2022-09-01
 venue: 'Arxiv preprint'
 paperurl: 'https://arxiv.org/pdf/2209.06950.pdf'
