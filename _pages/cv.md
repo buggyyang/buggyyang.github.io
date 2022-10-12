@@ -32,7 +32,7 @@ Research experience
 
 Publications
 ======
-* See [here](/publications)
+* See [here](/publications/)
   
 Teaching
 ======
