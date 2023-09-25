@@ -18,8 +18,12 @@ Education
 
 Research experience
 ======
-* Summer 2021: Research Engineer
-  * Qualcomm AI Research, Qualcomm Technologies, Inc.
+* Summer 2023: Research Intern
+  * Microsoft Research, Microsoft.
+  * Research Topic: Generative video and audio modeling
+
+* Summer 2021: Research Intern
+  * Qualcomm AI Research, Qualcomm.
   * Research Topic: Neural Video Compression
 
 * 2018/01-2019/07: Research Assistant
