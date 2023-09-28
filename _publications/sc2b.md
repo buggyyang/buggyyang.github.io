@@ -16,7 +16,7 @@ Citation:
 ```
 @article{
 matsubara2023sc,
-title={{SC}2 Benchmark: Supervised Compression for Split Computing},
+title={SC2 Benchmark: Supervised Compression for Split Computing},
 author={Yoshitomo Matsubara and Ruihan Yang and Marco Levorato and Stephan Mandt},
 journal={Transactions on Machine Learning Research},
 issn={2835-8856},
