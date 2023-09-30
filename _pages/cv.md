@@ -20,7 +20,7 @@ Research experience
 ======
 * Summer 2023: Research Intern
   * Microsoft Research, Microsoft.
-  * Research Topic: Generative video and audio modeling
+  * Research Topic: Generative Video and Audio Modeling
 
 * Summer 2021: Research Intern
   * Qualcomm AI Research, Qualcomm.
