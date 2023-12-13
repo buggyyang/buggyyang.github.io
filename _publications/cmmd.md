@@ -2,7 +2,7 @@
 title: "CMMD: Contrastive Multi-Modal Diffusion for Video-Audio Conditional Modeling"
 collection: publications
 permalink: /publication/cmmd
-excerpt: "**Ruihan Yang** Hannes Gamper and Sebastian Braun"
+excerpt: "**Ruihan Yang**, Hannes Gamper and Sebastian Braun"
 date: 2023-12-13
 venue: 'arXiv'
 paperurl: 'https://arxiv.org/abs/2312.05412'
