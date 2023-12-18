@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/insight
 excerpt: "**Ruihan Yang**, Yibo Yang, Joseph Marino and Stephan Mandt"
 date: 2023-03-22
-venue: 'TPAMI'
+venue: 'TPAMI (arXived in 2021 published in 2023)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/10078276/'
 citation: #'Yang, Ruihan, and Stephan Mandt. "Lossy Image Compression with Conditional Diffusion Models." arXiv preprint arXiv:2209.06950 (2022).'
 ---

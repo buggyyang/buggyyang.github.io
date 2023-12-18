@@ -3,8 +3,8 @@ title: "Diffusion Probabilistic Modeling for Video Generation"
 collection: publications
 permalink: /publication/dpmvg
 excerpt: "**Ruihan Yang**, Prakhar Srivastava and Stephan Mandt"
-date: 2022-03-01
-venue: 'Entropy'
+date: 2023-09-01
+venue: 'Entropy (arXived in 2022 published in 2023)'
 paperurl: 'https://arxiv.org/pdf/2203.09481.pdf'
 citation: #'Yang, Ruihan, and Stephan Mandt. "Lossy Image Compression with Conditional Diffusion Models." arXiv preprint arXiv:2209.06950 (2022).'
 ---
