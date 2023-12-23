@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-- I'm a Computer Science PhD student at UC Irvine (started from Fall 2019), advised by [Stephan Mandt](http://www.stephanmandt.com/)
+- I am a Computer Science PhD student at UC Irvine, where I began my studies in Fall 2019 under the guidance of Prof. [Stephan Mandt](http://www.stephanmandt.com/). My research focuses on neural-based image/video compression and generation. In addition, I have a keen interest in applying deep generative models to various domains, including natural science and music.
 
-- My research involves neural-based image/video compression and generation. I'm also interested in the application of deep generative models and probablisitic models on other topics such as natural science and music.
-
-- I got my bachelor's degree in computer science from NYU Shanghai, where I also served as a research assistant advised by both [Gus Xia](http://www.musicxlab.com/members/gus/) (Research on generative modeling of music) and [Hanghui Chen](https://www.hanghuichen.org/) (Research on computational material science).
+- Prior to joining UC Irvine, I completed my bachelor's degree in computer science at NYU Shanghai. During my time there, I served as a research assistant under the supervision of Prof. [Gus Xia](http://www.musicxlab.com/members/gus/), exploring generative modeling in the context of music. I also worked with Prof. [Hanghui Chen](https://www.hanghuichen.org/) (Research on computational material science), conducting research on computational material science.
