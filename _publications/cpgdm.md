@@ -2,7 +2,7 @@
 title: "Fast Samplers for Inverse Problems in Iterative Refinement Models"
 collection: publications
 permalink: /publication/cpgdm
-excerpt: "Kushagra Pandey^*, **Ruihan Yang**^* and Stephan Mandt"
+excerpt: "Kushagra Pandey^*^, **Ruihan Yang**^*^ and Stephan Mandt"
 date: 2024-05-22
 venue: 'arXiv'
 paperurl: 'https://arxiv.org/pdf/2405.17673'
