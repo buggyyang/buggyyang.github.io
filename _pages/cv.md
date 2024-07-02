@@ -18,6 +18,10 @@ Education
 
 Other research experience including industrial research
 ======
+* Summer 2024: Research Intern
+  * Microsoft Azure AI, Microsoft.
+  * Research Topic: Audio guided video editing
+
 * Summer 2023: Research Intern
   * Microsoft Research, Microsoft.
   * Research Topic: Generative Video and Audio Modeling
