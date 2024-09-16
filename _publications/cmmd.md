@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/cmmd
 excerpt: "**Ruihan Yang**, Hannes Gamper and Sebastian Braun"
 date: 2023-12-13
-venue: 'arXiv'
+venue: 'ECCV AVGenL Workshop'
 paperurl: 'https://arxiv.org/abs/2312.05412'
 citation: #'Yang, Ruihan, Hannes Gamper and Sebastian Braun. "CMMD: Contrastive Multi-Modal Diffusion for Video-Audio Conditional Modeling." arXiv preprint arXiv:2312.05412 (2023).'
 ---
