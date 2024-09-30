@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/cpgdm
 excerpt: "Kushagra Pandey<sup>*</sup>, **Ruihan Yang**<sup>*</sup> and Stephan Mandt"
 date: 2024-05-22
-venue: 'arXiv'
+venue: 'NeurIPS 2024'
 paperurl: 'https://arxiv.org/pdf/2405.17673'
 citation: #'Yang, Ruihan, and Stephan Mandt. "Lossy Image Compression with Conditional Diffusion Models." arXiv preprint arXiv:2209.06950 (2022).'
 ---
