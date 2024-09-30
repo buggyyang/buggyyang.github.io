@@ -4,8 +4,8 @@ collection: publications
 permalink: /publication/ogdiff
 excerpt: "Prakhar Srivastava, **Ruihan Yang**, Gavin Kerrigan, Gideon Dresdner, Jeremy McGibbon, Christopher Bretherton, Stephan Mandt
 "
-date: 2023-12-11
-venue: 'NeurIPS 2024'
+date: 2024-12-09
+venue: 'NeurIPS'
 paperurl: 'https://arxiv.org/abs/2312.06071'
 citation: #'Yang, Ruihan, Hannes Gamper and Sebastian Braun. "CMMD: Contrastive Multi-Modal Diffusion for Video-Audio Conditional Modeling." arXiv preprint arXiv:2312.05412 (2023).'
 ---
