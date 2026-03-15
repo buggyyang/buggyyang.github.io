@@ -5,86 +5,411 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Ruihan Yang - Senior Researcher at Tencent America. Research in neural image/video compression, diffusion models, and deep generative models.">
-    <title>Ruihan Yang - About Me</title>
+        content="Ruihan Yang - Senior Researcher at Tencent America. Research in multimodal understanding, vision-language models, and computer use agents.">
+    <title>Ruihan Yang</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Apply theme before first paint to prevent flash -->
+    <script>
+        (function () {
+            var saved = localStorage.getItem('theme');
+            var prefer = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+            var theme = saved || prefer;
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 </head>
 
 <body>
+    <!-- Theme toggle button -->
+    <button id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+
     <div class="bg-animation"></div>
     <div class="container">
         <nav>
-            <a href="index.html" class="active">About</a>
-            <a href="education.html">Education</a>
-            <a href="research.html">Professional Experience</a>
-            <a href="publications.html">Publications</a>
-            <a href="service.html">Service</a>
+            <a href="#about" class="nav-tab active" data-tab="about">About</a>
+            <a href="#education" class="nav-tab" data-tab="education">Education</a>
+            <a href="#research" class="nav-tab" data-tab="research">Professional Experience</a>
+            <a href="#publications" class="nav-tab" data-tab="publications">Publications</a>
+            <a href="#service" class="nav-tab" data-tab="service">Service</a>
         </nav>
 
-        <section>
-            <div class="hero">
-                <img src="profile.png" alt="Ruihan Yang" class="profile-image">
-                <div class="hero-text">
-                    <h1>Ruihan Yang</h1>
-                    <p class="subtitle">Senior Researcher · Tencent America</p>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <span class="stat-number">Ph.D.</span>
-                            <span class="stat-label">UC Irvine</span>
+        <!-- ── About ── -->
+        <div id="tab-about" class="tab-panel">
+            <section>
+                <div class="hero">
+                    <img src="profile.png" alt="Ruihan Yang" class="profile-image">
+                    <div class="hero-text">
+                        <h1>Ruihan Yang</h1>
+                        <p class="subtitle">Senior Researcher · Tencent America</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <span class="stat-number">Ph.D.</span>
+                                <span class="stat-label">UC Irvine</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="bio">
-                <p><strong>I am a Senior Researcher at Tencent America.</strong> My current research centers on
-                    multimodal understanding, with a particular emphasis on vision-language models and actively
-                    exploring computer use agents. On the side, due to my previous research background, I am also
-                    interested in generative models.</p>
-                <p>I received my PhD in Computer Science at UC Irvine, where I had been conducting research since Fall
-                    2019 under the supervision of Prof. <a href="http://www.stephanmandt.com/">Stephan Mandt</a>. My
-                    research primarily focuses on developing neural-based approaches for image/video compression and
-                    generation.</p>
-                <p>Before joining UC Irvine, I earned my bachelor's degree in Computer Science from NYU Shanghai. During
-                    my undergraduate studies, I had the privilege of working as a research assistant with Prof. <a
-                        href="http://www.musicxlab.com/members/gus/">Gus Xia</a>, where I investigated generative
-                    modeling applications in music. Additionally, I collaborated with Prof. <a
-                        href="https://www.hanghuichen.org/">Hanghui Chen</a> on physics research, gaining valuable
-                    interdisciplinary experience.</p>
-            </div>
-
-            <div class="research-tags">
-                <span class="tag">Vision-Language Models</span>
-                <span class="tag">Computer Use Agent</span>
-                <span class="tag">Multimodal Learning</span>
-                <span class="tag">Image/Video Compression</span>
-                <span class="tag">Image/Video Generation</span>
-                <span class="tag">Diffusion Generative Models</span>
-            </div>
-
-            <div class="latest-pub">
-                <h3><i class="fas fa-star"></i> Latest Publication</h3>
-                <div class="latest-pub-card">
-                    <span class="paper-title"><a href="https://arxiv.org/pdf/2603.06569" target="_blank">Penguin-VL:
-                            Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders</a></span>
-                    <span class="venue venue-preprint">Technical Report, 2026</span>
-                    <span class="authors">Boqiang Zhang*, Lei Ke*, <strong>Ruihan Yang</strong>*, Qi Gao*, Tianyuan Qu*,
-                        Rossell Chen, Dong Yu, Leoweiliang</span>
+                <div class="bio">
+                    <p><strong>I am a Senior Researcher at Tencent America.</strong> My current research centers on
+                        multimodal understanding, with a particular emphasis on vision-language models and actively
+                        exploring computer use agents. On the side, due to my previous research background, I am also
+                        interested in generative models.</p>
+                    <p>I received my PhD in Computer Science at UC Irvine, where I had been conducting research since Fall
+                        2019 under the supervision of Prof. <a href="http://www.stephanmandt.com/">Stephan Mandt</a>. My
+                        research primarily focuses on developing neural-based approaches for image/video compression and
+                        generation.</p>
+                    <p>Before joining UC Irvine, I earned my bachelor's degree in Computer Science from NYU Shanghai. During
+                        my undergraduate studies, I had the privilege of working as a research assistant with Prof. <a
+                            href="http://www.musicxlab.com/members/gus/">Gus Xia</a>, where I investigated generative
+                        modeling applications in music. Additionally, I collaborated with Prof. <a
+                            href="https://www.hanghuichen.org/">Hanghui Chen</a> on physics research, gaining valuable
+                        interdisciplinary experience.</p>
                 </div>
-            </div>
 
-            <div class="contact-box">
-                <p><i class="fas fa-envelope"></i> <a href="mailto:ruihan.yang@uci.edu">ruihan.yang@uci.edu</a></p>
-                <p><i class="fab fa-github"></i> <a href="https://github.com/buggyyang"
-                        target="_blank">github.com/buggyyang</a></p>
-                <p><i class="fas fa-graduation-cap"></i> <a
-                        href="https://scholar.google.com/citations?user=mWEXfLwAAAAJ" target="_blank">Google Scholar</a>
-                </p>
-                <p><i class="fas fa-file-pdf"></i> <a href="CV.pdf" download>Download CV</a></p>
-            </div>
-        </section>
+                <div class="research-tags">
+                    <span class="tag">Vision-Language Models</span>
+                    <span class="tag">Computer Use Agent</span>
+                    <span class="tag">Multimodal Learning</span>
+                    <span class="tag">Image/Video Compression</span>
+                    <span class="tag">Image/Video Generation</span>
+                    <span class="tag">Diffusion Generative Models</span>
+                </div>
+
+                <div class="latest-pub">
+                    <h3><i class="fas fa-star"></i> Latest Publication</h3>
+                    <div class="latest-pub-card">
+                        <span class="paper-title"><a href="https://arxiv.org/pdf/2603.06569" target="_blank">Penguin-VL:
+                                Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders</a></span>
+                        <span class="venue venue-preprint">Technical Report, 2026</span>
+                        <span class="authors">Boqiang Zhang*, Lei Ke*, <strong>Ruihan Yang</strong>*, Qi Gao*, Tianyuan Qu*,
+                            Rossell Chen, Dong Yu, Leoweiliang</span>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:ruihan.yang@uci.edu">ruihan.yang@uci.edu</a></p>
+                    <p><i class="fab fa-github"></i> <a href="https://github.com/buggyyang"
+                            target="_blank">github.com/buggyyang</a></p>
+                    <p><i class="fas fa-graduation-cap"></i> <a
+                            href="https://scholar.google.com/citations?user=mWEXfLwAAAAJ" target="_blank">Google Scholar</a>
+                    </p>
+                    <p><i class="fas fa-file-pdf"></i> <a href="CV.pdf" download>Download CV</a></p>
+                </div>
+            </section>
+        </div>
+
+        <!-- ── Education ── -->
+        <div id="tab-education" class="tab-panel" hidden>
+            <section>
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <div class="edu-entry">
+                            <span class="edu-icon">🎓</span>
+                            <div class="edu-details">
+                                <span class="edu-degree">Ph.D. in Computer Science</span>
+                                <span class="edu-school">University of California, Irvine</span>
+                                <span class="edu-year">2019 – 2025</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="edu-entry">
+                            <span class="edu-icon">🎓</span>
+                            <div class="edu-details">
+                                <span class="edu-degree">B.S. in Computer Science</span>
+                                <span class="edu-school">NYU Shanghai · New York University</span>
+                                <span class="edu-year">2014 – 2018</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- ── Professional Experience ── -->
+        <div id="tab-research" class="tab-panel" hidden>
+            <section>
+                <h2>Professional Experience</h2>
+                <ul class="timeline">
+                    <li>
+                        <span class="research-title">Senior Researcher</span>
+                        <span class="organization">AI Lab</span>
+                        <span class="company">Tencent America</span>
+                        <span class="region">Bellevue, WA, US</span>
+                        <span class="time">2025/04 – Present</span>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Internship Experience</h2>
+                <ul class="timeline">
+                    <li>
+                        <span class="research-title">Research Intern</span>
+                        <span class="organization">Microsoft Azure AI</span>
+                        <span class="company">Microsoft</span>
+                        <span class="region">Redmond, WA, US</span>
+                        <span class="time">2024/06 – 2025/03</span>
+                    </li>
+                    <li>
+                        <span class="research-title">Research Intern</span>
+                        <span class="organization">Microsoft Research</span>
+                        <span class="company">Microsoft</span>
+                        <span class="region">Redmond, WA, US</span>
+                        <span class="time">2023/06 – 2023/09</span>
+                    </li>
+                    <li>
+                        <span class="research-title">Interim Engineering Intern</span>
+                        <span class="organization">Qualcomm AI Research</span>
+                        <span class="company">Qualcomm</span>
+                        <span class="region">San Diego, CA, US</span>
+                        <span class="time">2021/06 – 2021/09</span>
+                    </li>
+                    <li>
+                        <span class="research-title">Research Assistant</span>
+                        <span class="organization">Computer Science</span>
+                        <span class="company">NYU Shanghai</span>
+                        <span class="region">Shanghai, China</span>
+                        <span class="time">2018/01 – 2019/07</span>
+                    </li>
+                    <li>
+                        <span class="research-title">Affiliated Research Assistant</span>
+                        <span class="organization">Physics</span>
+                        <span class="company">NYU Shanghai</span>
+                        <span class="region">Shanghai, China</span>
+                        <span class="time">2017/09 – 2019/07</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- ── Publications ── -->
+        <div id="tab-publications" class="tab-panel" hidden>
+            <section>
+                <h2>Papers</h2>
+                <p style="font-size: 0.85em; font-style: italic; color: var(--text-muted); margin-bottom: 1.5rem;">* indicates equal contribution</p>
+                <ul>
+                    <li>
+                        <span class="paper-title"><a href="https://arxiv.org/pdf/2603.06569" target="_blank">Penguin-VL:
+                                Exploring the Efficiency Limits of VLM with LLM-based Vision Encoders</a></span>
+                        <span class="venue venue-preprint">Technical Report, 2026</span>
+                        <span class="authors">Boqiang Zhang*, Lei Ke*, <strong>Ruihan Yang</strong>*, Qi Gao*, Tianyuan Qu*,
+                            Rossell Chen, Dong Yu, Leoweiliang</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a href="https://openreview.net/pdf?id=kQCHCkNk7s"
+                                target="_blank">AstroCompress: A benchmark dataset for multi-purpose compression of
+                                astronomical data</a></span>
+                        <span class="venue venue-conference">ICLR, 2025</span>
+                        <span class="authors">Tuan Truong*, Rithwik Sudharsan*, Yibo Yang, Peter Ma, <strong>Ruihan
+                                Yang</strong>, Stephan Mandt, Joshua S. Bloom</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a
+                                href="https://papers.nips.cc/paper_files/paper/2024/file/2f46ef5725a8eca24f7f24a17955ad1a-Paper-Conference.pdf"
+                                target="_blank">Fast Samplers for Inverse Problems in Iterative Refinement Models</a></span>
+                        <span class="venue venue-conference">NeurIPS, 2024</span>
+                        <span class="authors">Kushagra Pandey*, <strong>Ruihan Yang</strong>*, Stephan Mandt</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a
+                                href="https://proceedings.neurips.cc/paper_files/paper/2024/file/669b0bb64ff9eff7a81a7858a54fe7a0-Paper-Conference.pdf"
+                                target="_blank">Precipitation Downscaling with Spatiotemporal Video Diffusion</a></span>
+                        <span class="venue venue-conference">NeurIPS, 2024</span>
+                        <span class="authors">Prakhar Srivastava, <strong>Ruihan Yang</strong>, Gavin Kerrigan, Gideon
+                            Dresdner, Jeremy McGibbon, Christopher Bretherton, Stephan Mandt</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a href="https://arxiv.org/pdf/2312.05412" target="_blank">CMMD:
+                                Contrastive Multi-Modal Diffusion for Video-Audio Conditional Modeling</a></span>
+                        <span class="venue venue-workshop">ECCV AVGenL Workshop, 2024</span>
+                        <span class="authors"><strong>Ruihan Yang</strong>, Hannes Gamper, Sebastian Braun</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a
+                                href="https://proceedings.neurips.cc/paper_files/paper/2023/file/ccf6d8b4a1fe9d9c8192f00c713872ea-Paper-Conference.pdf"
+                                target="_blank">Lossy Image Compression with Conditional Diffusion Model</a></span>
+                        <span class="venue venue-conference">NeurIPS, 2023</span>
+                        <span class="authors"><strong>Ruihan Yang</strong>, Stephan Mandt</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a href="https://arxiv.org/pdf/2203.08875" target="_blank">SC2 Benchmark:
+                                Supervised Compression for Split Computing</a></span>
+                        <span class="venue venue-journal">TMLR, 2023</span>
+                        <span class="authors">Yoshitomo Matsubara, <strong>Ruihan Yang</strong>, Marco Levorato, Stephan
+                            Mandt</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a href="https://ieeexplore.ieee.org/document/10078276"
+                                target="_blank">Insights from Generative Modeling for Neural Video Compression</a></span>
+                        <span class="venue venue-journal">TPAMI</span>
+                        <span class="authors"><strong>Ruihan Yang</strong>, Yibo Yang, Joe Marino, Stephan Mandt</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a href="https://arxiv.org/pdf/2203.09481" target="_blank">Diffusion
+                                Probabilistic Modeling for Video Generation</a></span>
+                        <span class="venue venue-journal">Entropy</span>
+                        <span class="authors"><strong>Ruihan Yang</strong>, Prakhar Srivastava, Stephan Mandt</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a
+                                href="https://openaccess.thecvf.com/content/WACV2022/papers/Matsubara_Supervised_Compression_for_Resource-Constrained_Edge_Computing_Systems_WACV_2022_paper.pdf"
+                                target="_blank">Supervised Compression for Resource-Constrained Edge Computing
+                                Systems</a></span>
+                        <span class="venue venue-conference">WACV, 2022</span>
+                        <span class="authors">Yoshitomo Matsubara, <strong>Ruihan Yang</strong>, Marco Levorato, Stephan
+                            Mandt</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a href="https://openreview.net/pdf?id=TK_6nNb_C7q"
+                                target="_blank">Hierarchical Autoregressive Modeling for Neural Video Compression</a></span>
+                        <span class="venue venue-conference">ICLR, 2021</span>
+                        <span class="authors"><strong>Ruihan Yang</strong>, Yibo Yang, Joe Marino, Stephan Mandt</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a href="https://archives.ismir.net/ismir2020/paper/000096.pdf"
+                                target="_blank">PIANOTREE VAE: Structured Representation Learning for Polyphonic
+                                Music</a></span>
+                        <span class="venue venue-conference">ISMIR, 2020</span>
+                        <span class="authors">Ziyu Wang, Yiyi Zhang, Yixiao Zhang, Junyan Jiang, <strong>Ruihan
+                                Yang</strong>, Junbo Zhao, Gus Xia</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a href="https://archives.ismir.net/ismir2019/paper/000072.pdf"
+                                target="_blank">Deep Music Analogy Via Latent Representation Disentanglement</a></span>
+                        <span class="venue venue-conference">ISMIR, 2019</span>
+                        <span class="authors"><strong>Ruihan Yang</strong>, Dingsu Wang, Ziyu Wang, Tianyao Chen, Junyan
+                            Jiang, Gus Xia</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a href="https://www.nime.org/proceedings/2019/nime2019_paper059.pdf"
+                                target="_blank">Inspecting and Interacting with Meaningful Music Representations using
+                                VAE</a></span>
+                        <span class="venue venue-conference">NIME, 2019</span>
+                        <span class="authors"><strong>Ruihan Yang</strong>, Tianyao Chen, Yiyi Zhang, Gus Xia</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a href="https://iopscience.iop.org/article/10.1088/1361-648X/ab31e0"
+                                target="_blank">The complex non-collinear magnetic orderings in Ba2YOsO6</a></span>
+                        <span class="venue venue-journal">J. Phys.: Condens. Matter</span>
+                        <span class="authors">Yue-wen Fang, <strong>Ruihan Yang</strong>, Hanghui Chen</span>
+                    </li>
+                    <li>
+                        <span class="paper-title"><a href="https://www.nature.com/articles/s41467-021-22541-1"
+                                target="_blank">A large modulation of electron-phonon coupling and an emergent
+                                superconducting dome in doped strong ferroelectrics</a></span>
+                        <span class="venue venue-journal">Nature Communications</span>
+                        <span class="authors">Jiaji Ma, <strong>Ruihan Yang</strong>, Hanghui Chen</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- ── Service ── -->
+        <div id="tab-service" class="tab-panel" hidden>
+            <section>
+                <h2>Service</h2>
+
+                <div class="service-category">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Teaching</h3>
+                    <ul>
+                        <li>Teaching Assistant for CS178, Winter 2020, UC Irvine</li>
+                        <li>Teaching Assistant for CS178, Winter 2024, UC Irvine</li>
+                        <li>Teaching Assistant for CS274C, Spring 2020, UC Irvine</li>
+                    </ul>
+                </div>
+
+                <div class="service-category">
+                    <h3><i class="fas fa-search"></i> Reviewing</h3>
+                    <ul>
+                        <li>Frequent Reviewer for ICLR, NeurIPS, ICML</li>
+                        <li>Reviewer for AISTATS 2024</li>
+                        <li>Reviewer for ACM-MM 2025</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </div>
+
+    <script>
+        (function () {
+            /* ── Tab switching ── */
+            const tabs = document.querySelectorAll('.nav-tab');
+            const panels = document.querySelectorAll('.tab-panel');
+
+            function showTab(tabId) {
+                panels.forEach(p => {
+                    if (p.id === 'tab-' + tabId) {
+                        p.removeAttribute('hidden');
+                    } else {
+                        p.setAttribute('hidden', '');
+                    }
+                });
+                tabs.forEach(t => {
+                    if (t.dataset.tab === tabId) {
+                        t.classList.add('active');
+                    } else {
+                        t.classList.remove('active');
+                    }
+                });
+            }
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const tabId = this.dataset.tab;
+                    history.pushState(null, '', '#' + tabId);
+                    showTab(tabId);
+                });
+            });
+
+            function loadFromHash() {
+                const hash = location.hash.replace('#', '') || 'about';
+                const valid = ['about', 'education', 'research', 'publications', 'service'];
+                showTab(valid.includes(hash) ? hash : 'about');
+            }
+
+            window.addEventListener('popstate', loadFromHash);
+            loadFromHash();
+
+            /* ── Dark / Light mode toggle ── */
+            const toggleBtn = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+
+            function applyTheme(theme) {
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+                if (theme === 'light') {
+                    themeIcon.className = 'fas fa-moon';
+                    toggleBtn.title = 'Switch to dark mode';
+                } else {
+                    themeIcon.className = 'fas fa-sun';
+                    toggleBtn.title = 'Switch to light mode';
+                }
+            }
+
+            // Determine initial theme (localStorage takes priority, then system)
+            var saved = localStorage.getItem('theme');
+            var prefer = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+            applyTheme(saved || prefer);
+
+            toggleBtn.addEventListener('click', function () {
+                var current = document.documentElement.getAttribute('data-theme');
+                applyTheme(current === 'light' ? 'dark' : 'light');
+            });
+
+            // React to system changes if no manual override is stored
+            window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', function (e) {
+                if (!localStorage.getItem('theme')) {
+                    applyTheme(e.matches ? 'light' : 'dark');
+                }
+            });
+        })();
+    </script>
 </body>
 
 </html>

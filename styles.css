@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-/* ── CSS Variables ── */
+/* ── CSS Variables – Dark (default) ── */
 :root {
     --bg-primary: #0a0f1a;
     --bg-secondary: #111827;
@@ -18,6 +18,48 @@
     --border-hover: rgba(99, 102, 241, 0.35);
     --shadow-glow: rgba(99, 102, 241, 0.15);
     --shadow-glow-strong: rgba(99, 102, 241, 0.3);
+}
+
+/* ── CSS Variables – Light ── */
+html[data-theme="light"] {
+    --bg-primary: #f0f4ff;
+    --bg-secondary: #e8edf8;
+    --bg-card: rgba(255, 255, 255, 0.75);
+    --bg-card-hover: rgba(241, 245, 255, 0.9);
+    --bg-glass: rgba(99, 102, 241, 0.04);
+    --bg-glass-hover: rgba(99, 102, 241, 0.08);
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
+    --accent-start: #4f46e5;
+    --accent-end: #0891b2;
+    --accent-mid: #7c3aed;
+    --border-color: rgba(99, 102, 241, 0.2);
+    --border-hover: rgba(99, 102, 241, 0.45);
+    --shadow-glow: rgba(99, 102, 241, 0.12);
+    --shadow-glow-strong: rgba(99, 102, 241, 0.25);
+}
+
+/* ── System default: light ── */
+@media (prefers-color-scheme: light) {
+    html:not([data-theme="dark"]) {
+        --bg-primary: #f0f4ff;
+        --bg-secondary: #e8edf8;
+        --bg-card: rgba(255, 255, 255, 0.75);
+        --bg-card-hover: rgba(241, 245, 255, 0.9);
+        --bg-glass: rgba(99, 102, 241, 0.04);
+        --bg-glass-hover: rgba(99, 102, 241, 0.08);
+        --text-primary: #0f172a;
+        --text-secondary: #334155;
+        --text-muted: #64748b;
+        --accent-start: #4f46e5;
+        --accent-end: #0891b2;
+        --accent-mid: #7c3aed;
+        --border-color: rgba(99, 102, 241, 0.2);
+        --border-hover: rgba(99, 102, 241, 0.45);
+        --shadow-glow: rgba(99, 102, 241, 0.12);
+        --shadow-glow-strong: rgba(99, 102, 241, 0.25);
+    }
 }
 
 /* ── Animated Background ── */
@@ -95,6 +137,72 @@ body {
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+/* ── Smooth theme transition on everything ── */
+*, *::before, *::after {
+    transition-property: background-color, border-color, color, box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+/* ── Theme Toggle Button ── */
+#theme-toggle {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 1000;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid var(--border-hover);
+    background: var(--bg-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px var(--shadow-glow), 0 0 0 1px var(--border-color);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.25s ease,
+                background 0.3s ease,
+                border-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.12) rotate(15deg);
+    box-shadow: 0 6px 28px var(--shadow-glow-strong), 0 0 0 1px var(--border-hover);
+}
+
+#theme-toggle:active {
+    transform: scale(0.95);
+}
+
+/* Light-mode adjustments for bg-animation */
+html[data-theme="light"] .bg-animation {
+    background: var(--bg-primary);
+}
+
+@media (prefers-color-scheme: light) {
+    html:not([data-theme="dark"]) .bg-animation {
+        background: var(--bg-primary);
+    }
+}
+
+html[data-theme="light"] .bg-animation::before,
+html[data-theme="light"] .bg-animation::after {
+    opacity: 0.18;
+}
+
+@media (prefers-color-scheme: light) {
+    html:not([data-theme="dark"]) .bg-animation::before,
+    html:not([data-theme="dark"]) .bg-animation::after {
+        opacity: 0.18;
+    }
 }
 
 /* ── Container (Glassmorphism) ── */
@@ -679,6 +787,26 @@ li:hover {
     background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
     box-shadow: 0 0 10px var(--shadow-glow-strong);
     z-index: 1;
+}
+
+/* ── Tab Panels ── */
+.tab-panel {
+    animation: tabFadeIn 0.35s ease-out both;
+}
+
+.tab-panel[hidden] {
+    display: none;
+}
+
+@keyframes tabFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ── Animations ── */
