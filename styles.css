@@ -1206,3 +1206,47 @@ html {
     background: rgba(99, 102, 241, 0.3);
     color: var(--text-primary);
 }
+
+/* ── Keyboard focus (visible only for keyboard users) ── */
+a:focus-visible,
+button:focus-visible,
+.nav-tab:focus-visible {
+    outline: 2px solid var(--accent-end);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* ── Footer link inherits muted tone ── */
+.footer a {
+    color: var(--text-muted);
+}
+
+.footer a:hover {
+    color: var(--accent-end);
+}
+
+/* ── Respect reduced-motion preference ── */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .bg-animation::before,
+    .bg-animation::after {
+        animation: none;
+    }
+
+    .profile-image {
+        animation: none;
+    }
+}
